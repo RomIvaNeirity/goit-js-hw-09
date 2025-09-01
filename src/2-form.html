@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-09</title>
+    <title>Form</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" type="image/svg+xml" href="./img/logo.svg" />
   </head>
@@ -23,18 +24,33 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link {=$highlight-curr}" href="./2-form.html"
-                >Form</a
-              >
+              <a class="back-link" href="./2-form.html">Form</a>
             </li>
             <li class="nav-item">
-              <a class="back-link" href="">Main</a>
+              <a class="nav-link {=$highlight-curr}" href="./index.html"
+                >Go Main</a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="container">
+        <form class="feedback-form" autocomplete="off">
+          <label>
+            Email
+            <input type="email" name="email" autofocus />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="8"></textarea>
+          </label>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./js/2-form.js" defer></script>
   </body>
 </html>
